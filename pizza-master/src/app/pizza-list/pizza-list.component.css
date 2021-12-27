@@ -1,0 +1,44 @@
+.PizzaList .PizzaList__item {
+    border: 1px solid #f1f1f1;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.PizzaList .PizzaList__item > span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.PizzaList .PizzaList__item:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border: 1px solid #ededed;
+    background: #f1f1f1;
+    cursor: pointer;
+}
+.PizzaList .PizzaList__item:hover .PizzaList__item__icon {
+    color: #d42434;
+}
+.PizzaList .PizzaList__item.PizzaList__item--active {
+    background: #673ab7;
+}
+.PizzaList .PizzaList__item.PizzaList__item--active span, .PizzaList .PizzaList__item.PizzaList__item--active .PizzaList__item__icon {
+    color: white;
+}
+.PizzaList .PizzaList__item.PizzaList__item--has-error {
+    border: 1px solid #d42434;
+}
+.PizzaList .PizzaList__item.PizzaList__item--add {
+    justify-content: center;
+}
+.PizzaList .PizzaList__item.PizzaList__item--add:hover .PizzaList__item__icon {
+    color: #673ab7;
+    transform: rotate(90deg);
+}
+.PizzaList .PizzaList__item .PizzaList__item__icon {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    color: #b6b6b6;
+}

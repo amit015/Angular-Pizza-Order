@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-12">
+        PLEASE SELECT CRUST: 
+      <div class="PizzaSizePicker">
+        <div class="PizzaSizePicker__item"
+             (click)="changeCrust(PizzaCrustEnum.NEWHANDTOSSED)"
+             [ngClass]="{'active': pizzaCrust === PizzaCrustEnum.NEWHANDTOSSED}">
+             NEW HAND TOSSED Rs. 110
+        </div>
+        <div class="PizzaSizePicker__item"
+             (click)="changeCrust(PizzaCrustEnum.WHOLEWHEATCRUST)"
+             [ngClass]="{'active': pizzaCrust === PizzaCrustEnum.WHOLEWHEATCRUST}">
+             WHOLE WHEAT CRUST Rs. 210
+        </div>
+        <div class="PizzaSizePicker__item"
+             (click)="changeCrust(PizzaCrustEnum.CHEESEBURST)"
+             [ngClass]="{'active': pizzaCrust === PizzaCrustEnum.CHEESEBURST}">
+             CHEESE BURST Rs. 310
+        </div>
+      </div>
+    </div>
+</div>

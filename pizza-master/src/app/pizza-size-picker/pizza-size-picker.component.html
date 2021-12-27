@@ -1,0 +1,23 @@
+<div class="row">
+
+        <div class="col-md-12">
+          PLEASE SELECT SIZE: 
+          <div class="PizzaSizePicker">
+            <div class="PizzaSizePicker__item"
+                 (click)="changeSize(PizzaSizeEnum.SMALL)"
+                 [ngClass]="{'active': pizzaSize === PizzaSizeEnum.SMALL}">
+              SMALL Rs. 110
+            </div>
+            <div class="PizzaSizePicker__item"
+                 (click)="changeSize(PizzaSizeEnum.MEDIUM)"
+                 [ngClass]="{'active': pizzaSize === PizzaSizeEnum.MEDIUM}">
+              MEDIUM Rs. 210
+            </div>
+            <div class="PizzaSizePicker__item"
+                 (click)="changeSize(PizzaSizeEnum.LARGE)"
+                 [ngClass]="{'active': pizzaSize === PizzaSizeEnum.LARGE}">
+              LARGE Rs. 310
+            </div>
+          </div>
+        </div>
+</div>
