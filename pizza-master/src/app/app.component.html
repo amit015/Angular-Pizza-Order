@@ -1,0 +1,11 @@
+<nb-layout >    
+        <nb-layout-header class="ng-layout-header" fixed >
+            <nb-icon icon="menu" style="font-size: 2.5rem; color: aliceblue; cursor: pointer;" (click)="toggle()"></nb-icon>
+            <app-navbar> </app-navbar>
+        </nb-layout-header>
+    <nb-sidebar responsive tag="left" >
+    </nb-sidebar>
+    <nb-layout-column>
+        <app-pizza-form-container></app-pizza-form-container>
+    </nb-layout-column>
+</nb-layout>
